@@ -43,6 +43,7 @@ import RadarPlot from "./examples/RadarPlot"
 import Matrix from "./examples/Matrix"
 import CustomLayout from "./examples/CustomLayout"
 import IsotypeChart from "./examples/IsotypeChart"
+import Dx from "./examples/DataExplorer"
 
 import Mark from "./sub-components/Mark"
 import DividedLine from "./sub-components/DividedLine"
@@ -65,6 +66,12 @@ export const PAGES = [
       {
         name: "XYFrame",
         className: "sub-header"
+      },
+      {
+        name: "Data Explorer",
+        className: "sub-header",
+        component: Dx,
+        url: "data-explorer"
       },
       {
         name: "Line Charts",

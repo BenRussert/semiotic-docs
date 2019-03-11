@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://semiotic.nteract.io",
   "dependencies": {
+    "@nteract/data-explorer": "^6.0.6",
     "babel-eslint": "^10.0.1",
     "d3-dsv": "1.0.10",
     "d3-flextree-v4": "^1.0.1",
