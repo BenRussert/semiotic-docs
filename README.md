@@ -50,15 +50,18 @@ package. cli instructions below:
 ```bash
 # cd to the nteract monorepo
 cd ~/path/to/nteract/
-# make sure to build every time you want to update the data-explorer:
 yarn build:packages
+
 cd packages/data-explorer
 yarn link
 
 cd ~/path/to/semiotic-docs/
-yarn link @nteract/data0explorer
-
+yarn link @nteract/data-explorer
 yarn start
+
+# Repeat build everytime you change the linked data-explorer src:
+cd ~/path/to/nteract/
+yarn build:packages
 
 ```
 
