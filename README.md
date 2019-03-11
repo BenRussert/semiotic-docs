@@ -41,3 +41,26 @@ const { NetworkFrame } = Semiotic
 ```
 
 These examples use [some CSS](https://github.com/nteract/semiotic-docs/blob/master/public/semiotic.css) to make things look nice.
+
+## Use For DataExplorer Development
+
+You can use `yarn link` to view your local build of the @nteract/data-explorer
+package. cli instructions below:
+
+```bash
+# cd to the nteract monorepo
+cd ~/path/to/nteract/
+# make sure to build every time you want to update the data-explorer:
+yarn build:packages
+cd packages/data-explorer
+yarn link
+
+cd ~/path/to/semiotic-docs/
+yarn link @nteract/data0explorer
+
+yarn start
+
+```
+
+Once started, be sure to `build:packages` in the nteract monorepo every time
+you want to see them in the semiotic-docs page.
